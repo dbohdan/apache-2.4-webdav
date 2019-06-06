@@ -9,7 +9,7 @@
     <h2>Uptime</h2>
     <p><?= [exec uptime -p] ?></p>
 
-    <h2>Free space</h2>
+    <h2>Disk space</h2>
     <pre><?= [exec df -h / /mnt/external/ /mnt/multimedia/] ?></pre>
 
     <h2>Memory</h2>
