@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<? ::rivet::headers set Cache-Control max-age=5 ?>
 <html>
   <head>
     <link rel="stylesheet" href="/theme.css">
