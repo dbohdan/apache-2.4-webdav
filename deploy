@@ -10,5 +10,5 @@ a2enmod cache
 a2enmod cache_disk
 
 rsync -rv etc var /
-a2ensite webdav
+a2ensite webdav-share
 systemctl restart apache2
