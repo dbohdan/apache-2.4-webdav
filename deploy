@@ -1,3 +1,14 @@
 #! /bin/sh
+a2enmod macro
+
+a2enmod dav
+a2enmod dav_fs
+a2enmod dav_lock
+
+a2enmod rivet
+a2enmod cache
+a2enmod cache_disk
+
 rsync -rv etc var /
+a2ensite webdav
 systemctl restart apache2
