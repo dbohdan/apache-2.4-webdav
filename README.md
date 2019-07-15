@@ -7,3 +7,7 @@ sudo a2enmod mpm_event
 
 sudo ./deploy
 ```
+
+# License
+
+MIT.
