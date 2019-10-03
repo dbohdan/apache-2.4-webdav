@@ -11,7 +11,7 @@
     <p><?= [exec uptime -p] ?></p>
 
     <h2>Disk space</h2>
-    <pre><?= [exec df -h / /home/ /mnt/external/ /mnt/multimedia/] ?></pre>
+    <pre><?= [exec df -h / /home/ /tank/shared/] ?></pre>
 
     <h2>Memory</h2>
     <pre><?= [exec free -m] ?></pre>
