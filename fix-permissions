@@ -1,0 +1,15 @@
+#! /bin/sh
+
+user=www-data
+group=www-data
+
+path="$1"
+
+if [ -z "$path" ]; then
+    echo "usage: $0 path"
+    exit 1
+fi
+
+chown -R "$user:$group" "$path"
+find "$path" -type d -print0 | xargs -0 chmod 0755
+find "$path" -type f -print0 | xargs -0 chmod 0644
