@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <? ::rivet::headers set Cache-Control max-age=5 ?>
-<html>
+<html lang="en">
   <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/theme.css">
   </head>
   <body>
@@ -11,7 +13,7 @@
     <p><?= [exec uptime -p] ?></p>
 
     <h2>Disk space</h2>
-    <pre><?= [exec df -h / /home/ /tank/shared/] ?></pre>
+    <pre><?= [exec df -h / /home/ /tank/incoming/ /tank/shared/]?></pre>
 
     <h2>Memory</h2>
     <pre><?= [exec free -m] ?></pre>
