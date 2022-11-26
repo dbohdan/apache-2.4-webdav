@@ -13,7 +13,7 @@
     <p><?= [exec uptime -p] ?></p>
 
     <h2>Disk space</h2>
-    <pre><?= [exec df -h / /home/ /tank/incoming/ /tank/shared/]?></pre>
+    <pre><?= [exec df -h / /home/ /srv/webdav/incoming/ /srv/webdav/shared/]?></pre>
 
     <h2>Memory</h2>
     <pre><?= [exec free -m] ?></pre>
