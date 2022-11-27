@@ -9,6 +9,6 @@ a2enmod rivet
 a2enmod cache
 a2enmod cache_disk
 
-rsync -rv etc var /
+rsync -rv etc srv /
 a2ensite webdav-share
 apachectl restart
